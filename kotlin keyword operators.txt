@@ -1,0 +1,196 @@
+
+hard keywords 在任何情况下都被保留
+as 类型转换、导包别名
+as？安全的类型转换
+break 终止当前循环执行
+class 声明一个类
+continue 执行循环的下一步（代码）
+do 执行do/while循环（后置条件判断）
+else 定义if条件判断语句的分支，当条件为false被执行
+false 代表false
+for 循环的开始标志
+fun 定义一个函数
+if 条件判断的开始
+in 指定一个循环遍历对象/中缀，用在判断一个值在一个区间，集合，或者其他含有contains实体
+   在when表达式中表示符合某条件/标记一个参数为泛型
+!in 中缀，用在判断一个值不在一个区间，集合，或者其他含有contains实体/用在when表达式表示不符合某条件
+interface 定义接口
+is 判断变量属于数据类型/在when表达式中当作条件
+!is 判断变量不属于数据类型/在when表达式中当作条件
+null 常量，未指向任何对象的引用
+object 声明一个匿名类 
+package 为当前文件命名包名
+return 从当前方法/匿名方法返回
+super 指向超类的方法或者参数/从子构造调用超类构造
+this 指当前接收者/用在次级构造方法（从主构造委托）
+throw 抛出异常
+true 代表true
+try 异常处理
+typealias 声明别名
+typeof future的保留字段
+val 声明不可变的属性，局部量
+var 生命可以变化的属性，局部变量
+when 条件表达式（执行给定的分支）
+while while循环（先置条件）
+
+soft keywords 在特定形况下当作保留字
+by 委托接口的实现给一个对象/委托某一属性的访问给一对象
+catch 异常处理代码块
+constructor 声明一级/次级构造方法
+delegate 作为注解的委托
+dynamic 表示动态类型
+field 注解的field
+file 注解的file
+finally 异常处理的必定执行的代码
+get 表示属性的get/注解的get
+import 导包
+init 初始一段代码块
+param 注解的parameter
+property 注解的属性
+reciever 注解的reciever
+set 声名属性的setter/注解的setter
+setparam 注解的setterparam
+where 继承属性的约束条件
+
+modifier keyword 修饰型关键字，在特定情况下可作为标识使用
+actual 指定哪个具体版本
+abstract 修饰类或者成员
+annotation 表示一个注解类
+companion 修饰一个对象为companion，可直接使用类名访问
+const 标记一个属性为常量
+crossinline 禁止传递内联函数的lambda使用非本地返回值（这个地方需要了解高阶函数）
+data 修饰类，表示该类为parcelable
+enum 枚举类
+expect 将声明标记为特定于平台的声明，期望在平台模块中实现。
+external  将声明标记为未在Kotlin中实现（通过JNI或JavaScript访问）
+final 禁止覆写
+infix 允许以中缀表示法调用函数
+inline告诉编译器内联函数和在调用站点传递给它的lambda
+inner 允许从嵌套类中引用外部类实例
+internal 标记为当前模块可见
+lateinit 延迟初始化
+noinline 关闭传递给内联函数的lambda的内联
+open 允许子类化或重写成员
+operator 将函数标记为重载运算符或实现约定
+out 将类型参数标记为协变
+override 将成员标记为超类成员的替代
+private 标记为只在当前类和文件可见
+protected 标记为只在当前类和父类可见
+public 全局可见
+reified 标记内联函数的参数在runtime可访问
+sealed 声明一个密封的类（具有受限子类的类）
+suspend 将函数或lambda标记为暂停（可用作协程）
+trailrec 将函数标记为尾递归（允许编译器用迭代替换递归）
+vararg 参数数量可变，一个或者多个
+
+special indentifiers 特殊标识符
+
+以下标识符由编译器在特定上下文中定义，并且可以在其他上下文中用作常规标识符：
+field 用于属性访问器中以引用属性的后备字段
+it 在lambda表达式中使用，以隐式的引用参数
+
+ 运算符和特殊符号
+
+Kotlin支持以下运算符和特殊符号：
+
++，-，*，/，%-数学运算符
+*也用于将数组传递给vararg参数
+
+=
+赋值运算符
+
+用于指定参数的默认值
+
++=，-=，*=，/=，%=-赋值运算
+
+++，---递增和递减运算符
+
+&&，||，!-逻辑“与”，“或”，“不”运算符（用于位运算，使用对应的中缀的功能）
+
+==，!=-相等运算符（转换为equals()对非基本类型的调用）
+
+===，!==-引用相等运算符
+
+<，>，<=，>=-比较运算符（翻译成的呼叫compareTo()对于非原始类型）
+
+[，]-索引访问运算符（转换为get和的调用set）
+
+!! 断言表达式为非空
+
+?.执行安全调用（如果接收者为非null，则调用方法或访问属性）
+
+?:如果左侧值为null，则采用右侧值（elvis运算符）
+
+::创建成员引用或类引用
+
+..创建范围
+
+: 在声明中将名称与类型分开
+
+?将类型标记为可为空
+
+->
+分隔lambda表达式的参数和主体
+
+分隔参数和函数类型中的返回类型声明
+
+分隔when表达式分支的条件和主体
+
+@
+引入注释
+
+引入或引用循环标签
+
+引入或引用lambda标签
+
+从外部范围引用“ this”表达式
+
+引用外部超类
+
+; 在同一行上分隔多个语句
+
+$在字符串模板中引用变量或表达式
+
+_
+在lambda表达式中替换未使用的参数
+
+在解构声明中替换未使用的参数
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomImageView" >
+        <attr name="cornerradius" format="dimension"/>
+        <attr name="leftTopRadius" format="dimension"/>
+        <attr name="rightTopRadius" format="dimension"/>
+        <attr name="leftBottomRadius" format="dimension"/>
+        <attr name="rightBottomRadius" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="CustomImmageViewKt" >
+        <attr name="rightTopRadiuskt" format="dimension"/>
+        <attr name="leftBottomRadiuskt" format="dimension"/>
+        <attr name="leftTopRadiuskt" format="dimension"/>
+        <attr name="rightBottomRadiuskt" format="dimension"/>
+        <attr name="cornerradiuskt" format="dimension"/>
+    </declare-styleable>
+</resources>

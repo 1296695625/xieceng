@@ -14,4 +14,11 @@
         <attr name="rightBottomRadiuskt" format="dimension"/>
         <attr name="cornerradiuskt" format="dimension"/>
     </declare-styleable>
+    <declare-styleable name="CircularIamgeView" >
+        <attr name="rTRadius" format="dimension"/>
+        <attr name="lBRadius" format="dimension"/>
+        <attr name="lTRadius" format="dimension"/>
+        <attr name="rBRadius" format="dimension"/>
+        <attr name="cornerRadius" format="dimension"/>
+    </declare-styleable>
 </resources>

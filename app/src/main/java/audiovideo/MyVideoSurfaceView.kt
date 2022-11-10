@@ -1,6 +1,7 @@
 package audiovideo
 
 import android.content.Context
+import android.content.SharedPreferences
 import android.content.res.AssetFileDescriptor
 import android.media.AudioAttributes
 import android.media.AudioManager
@@ -10,6 +11,9 @@ import android.util.Log
 import android.view.SurfaceHolder
 import android.view.SurfaceView
 import java.io.File
+import java.util.*
+import kotlin.collections.ArrayList
+import kotlin.collections.HashMap
 
 class MyVideoSurfaceView(context: Context) : SurfaceView(context), SurfaceHolder.Callback {
     private lateinit var surfaceHolder: SurfaceHolder
@@ -23,6 +27,10 @@ class MyVideoSurfaceView(context: Context) : SurfaceView(context), SurfaceHolder
         setFocusableInTouchMode(true);
         this.setKeepScreenOn(true);
         setZOrderOnTop(true);
+        var hashMap=HashMap<String,String>(10)
+        hashMap.put("","1")
+        hashMap.put("","2")
+
     }
 
     override fun surfaceCreated(holder: SurfaceHolder) {

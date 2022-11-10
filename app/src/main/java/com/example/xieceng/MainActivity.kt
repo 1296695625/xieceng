@@ -1,5 +1,6 @@
 package com.example.xieceng
 
+import android.app.ActivityManager
 import android.content.Intent
 import android.net.Network
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +16,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import mvvm.view.NameActivity
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     lateinit var viewModel: MainViewModel;
@@ -32,7 +34,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 tv.text = it
             }
         }
-
+        tolivedata.setOnClickListener(this)
     }
 
 
@@ -45,5 +47,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 VideoSurfaceViewActivity::class.java
             )
         )
+        if(v.id==R.id.tolivedata){startActivity(Intent(this,NameActivity::class.java))}
     }
 }
